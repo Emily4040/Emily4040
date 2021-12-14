@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<title>Robot Home Page</title>
+<link rel="icon" type="image/x-icon" href="R8.jpg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #CE7FFC;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('R1.jpg');
+  min-height: 100%;
+}
+
+
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body>
+
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">WHAT <span class="w3-hide-small">ARE</span> ROBOTS</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT HOME ROBOTS</h3>
+ <align>
+ <p>On this website you will find all the information you need to know about home robots.</p>
+  <div class="w3-row">
+    
+    </div>
+
+     <h4><p>Starting with the history, One of the first home robot was called "HERO" which sold in the 1980's. HERO was a robot designed by Heathkit to educate. Another prototype was called "Topo" which was avalible in 1980's by Androbot Inc, It allowed the user to do geomectric movements and coplete tasks, although, because it does not have a sensor it wasnt considered a robot until the second genoration contained a infared transmitter and could be controlled by a remote. With these two products, Home robots became more accesible by 2006 and by 2021 technoligy has grown to the point where rbots can feel,talk,and move on their own.</p></h4>
+	 <img src="Hero1.jpg" style="width:50%">
+	 <p>"HERO"
+	 <h4><p> How much are home robots today? Most home robots are around 300-1,000 dollars depending on what their designed to do. It takes over  $150,000 just to produce a home robot. If your working for any companies that sell home robots you would make around  $61,447 a year. You might be thinking, What can home robots do? Home robots can clean your floors,bring snacks to you, keep your family close with video calls, act as a personal assistant, answer questions or just be cute. like this little robot named Vector.
+	 <img src="R3.jpg" style="width:50%">
+	  </align>
+    </div>
+  </div>
+  
+
+
+
+</div>
+<center>
+<h3><a href="file:///F:/CSP%20WORK/Pientak.finial/Robot%20images%20.html">Robot images</a></h3>
+<h3><a href="file:///F:/CSP%20WORK/Pientak.finial/Robot%20videos.html">About home robots video</a></h3>
+<h3><a href="file:///F:/CSP%20WORK/Pientak.finial/About%20me.html">About me</a></h3>
+<center>
+  </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  </div>
+  <p>Credit to<br><a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
